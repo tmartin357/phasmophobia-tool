@@ -61,6 +61,10 @@ function checkGhosts() {
     }
 }
 
+function crossFoundEvidence() {
+    return;
+}
+
 function checkReward(element) {
     var checkedEvidence = false;
     var parent = element.parentElement.parentElement;
