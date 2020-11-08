@@ -38,4 +38,5 @@ function setState(element, state) {
     element.textContent = state.text;
     element.dataset.state = state.data;
     checkGhosts();
+    crossFoundEvidence();
 }
