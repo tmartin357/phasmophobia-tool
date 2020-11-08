@@ -23,13 +23,13 @@ const ghosts = Object.freeze({
 });
 
 function checkGhosts() {
-    var buttons = [].slice.call(document.querySelectorAll("#evidence .multistate"));
-    var elements = [].slice.call(document.getElementsByClassName("ghost"));
+    var buttons = [].slice.call(document.querySelectorAll("#evidence .multistate")); // Let buttons be the references to the checkboxes of the evidence panel
+    var elements = [].slice.call(document.getElementsByClassName("ghost")); // Let elements be the references to the ghost flexboxes of the possibilities panel
 
-    for(var element of elements) {
-        var id = element.querySelector("button").id;
-        var included = buttons.filter(b => ghosts[id].includes(b.id));
-        var excluded = buttons.filter(b => !included.includes(b));
+    for(var element of elements) { // For each Ghost flexbox (plus hidden) in possibilities panel
+        var id = element.querySelector("button").id; // Let id be the checkbox id
+        var included = buttons.filter(b => ghosts[id].includes(b.id)); // Let included be the references to the evidence (panel) checkbox of the ghost's evidence
+        var excluded = buttons.filter(b => !included.includes(b)); // Let excluded be the references to the evidence (panel) checkbox of the the ones not of the ghost's evidence 
         var isExcluded = false;
 
         for(var i = 0; i < excluded.length; i++) {
