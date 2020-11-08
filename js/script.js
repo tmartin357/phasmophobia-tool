@@ -44,7 +44,7 @@ function checkGhosts() {
         }
 
         if(!isExcluded) { // If the ghost type is not excluded
-            for(var i = 0; i < included.length; i++) { // for each of the type's evidence
+            for(var i = 0; i < included.length; i++) { // for each of the (ghost) type's evidence
                 if(included[i].dataset.state === states.no.data) { // If the evidence is marked X
                     isExcluded = true;
                     break;
