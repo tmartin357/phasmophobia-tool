@@ -62,7 +62,35 @@ function checkGhosts() {
 }
 
 function crossFoundEvidence() {
-    return;
+    // var ghostElements = [].slice.call(document.getElementsByClassName("ghost")); // Let ghostElements be the references to the flexboxes (ghosts) of the possibilities panel
+
+    // for(var ghost of ghostElements) { // For each Ghost flexbox (plus hidden) in possibilities panel    
+    //     var hints = [].slice.call(ghost.getElementsByClassName("hint-evidence"));
+    //     var included = buttons.filter(b => ghosts[id].includes(b.id)); // Let included be the references to the evidence (panel) checkbox of the ghost's evidence
+        
+    //     for(var i = 0; i < hints.length; i++) {
+    //         console.log(hints[i].id);
+    //     }
+    // }
+    var buttons = [].slice.call(document.querySelectorAll("#evidence .multistate")); // evidence panel checkboxes
+    var elements = [].slice.call(document.getElementsByClassName("ghost")); // ghost entries
+
+    for(var element of elements) { // For each Ghost flexbox (plus hidden) in possibilities panel
+        var id = element.querySelector("button").id; // Ghost type id field
+        var hints = [].slice.call(element.getElementsByClassName("hint-evidence")); // ghost hint entries
+        
+        for(var hint of hints) {
+            hint.classList.remove("crossed");
+            for(var button of buttons) {
+                if(button.id === hint.id) {
+                    if(button.dataset.state === states.yes.data) {
+                        hint.classList.add("crossed");
+                        break;
+                    }
+                }
+            }
+        }
+    }
 }
 
 function checkReward(element) {

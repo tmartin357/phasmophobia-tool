@@ -323,3 +323,7 @@ header h1 {
 .light-theme #container > div:first-of-type {
   border-bottom: 1px solid black;
 }
+
+.crossed {
+  text-decoration: line-through !important;
+}
