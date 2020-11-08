@@ -48,8 +48,8 @@
         <div>
             <div class="column" id="left">
                 <section>
-                    <p class="section-title">Objectives <a href="#" data-state="no" data-toggle-id="objectives" class="toggle">show section</a></p>
-                    <div id="objectives" class="hidden">
+                    <p class="section-title">Objectives</p>
+                    <div id="objectives">
                         <div class="flexbox">
                             <input type="checkbox" id="journal-objective"/>
                             <label for="journal-objective">Enter ghost type in journal</label>
@@ -59,14 +59,14 @@
                             <input type="checkbox"/>
                             <select id="objective-1">
                                 <option>None</option>
-                                <option id="emf">Detect activity with EMF</option>
-                                <option id="temperature">Detect below 10&deg;C/50&deg;F</option>
-                                <option id="dirty-water" value="photo-dirty-water">Photograph dirty water</option>
-                                <option id="ghost" value="photo-ghost">Photograph ghost</option>
-                                <option id="motion">Detect ghost with motion sensor</option>
-                                <option id="crucifix">Prevent ghost hunt with crucifix</option>
-                                <option id="witness">Witness ghost event</option>
-                                <option id="smudge">Cleanse using smudge sticks</option>
+                                <option id="emf">EMF</option>
+                                <option id="temperature">Temprature</option>
+                                <option id="dirty-water" value="photo-dirty-water">Dirty Water</option>
+                                <option id="ghost" value="photo-ghost">Photograph Ghost</option>
+                                <option id="motion">Motion Sensor</option>
+                                <option id="crucifix">Crucifix</option>
+                                <option id="witness">Witness Ghost Event</option>
+                                <option id="smudge">Smudge Sticks</option>
                             </select>
                         </div>
 
@@ -74,14 +74,14 @@
                             <input type="checkbox"/>
                             <select id="objective-2">
                                 <option>None</option>
-                                <option id="emf">Detect activity with EMF</option>
-                                <option id="temperature">Detect below 10&deg;C/50&deg;F</option>
-                                <option id="dirty-water" value="photo-dirty-water">Photograph dirty water</option>
-                                <option id="ghost" value="photo-ghost">Photograph ghost</option>
-                                <option id="motion">Detect ghost with motion sensor</option>
-                                <option id="crucifix">Prevent ghost hunt with crucifix</option>
-                                <option id="witness">Witness ghost event</option>
-                                <option id="smudge">Cleanse using smudge sticks</option>
+                                <option id="emf">EMF</option>
+                                <option id="temperature">Temprature</option>
+                                <option id="dirty-water" value="photo-dirty-water">Dirty Water</option>
+                                <option id="ghost" value="photo-ghost">Photograph Ghost</option>
+                                <option id="motion">Motion Sensor</option>
+                                <option id="crucifix">Crucifix</option>
+                                <option id="witness">Witness Ghost Event</option>
+                                <option id="smudge">Smudge Sticks</option>
                             </select>
                         </div>
 
@@ -89,14 +89,14 @@
                             <input type="checkbox"/>
                             <select id="objective-3">
                                 <option>None</option>
-                                <option id="emf">Detect activity with EMF</option>
-                                <option id="temperature">Detect below 10&deg;C/50&deg;F</option>
-                                <option id="dirty-water" value="photo-dirty-water">Photograph dirty water</option>
-                                <option id="ghost" value="photo-ghost">Photograph ghost</option>
-                                <option id="motion">Detect ghost with motion sensor</option>
-                                <option id="crucifix">Prevent ghost hunt with crucifix</option>
-                                <option id="witness">Witness ghost event</option>
-                                <option id="smudge">Cleanse using smudge sticks</option>
+                                <option id="emf">EMF</option>
+                                <option id="temperature">Temprature</option>
+                                <option id="dirty-water" value="photo-dirty-water">Dirty Water</option>
+                                <option id="ghost" value="photo-ghost">Photograph Ghost</option>
+                                <option id="motion">Motion Sensor</option>
+                                <option id="crucifix">Crucifix</option>
+                                <option id="witness">Witness Ghost Event</option>
+                                <option id="smudge">Smudge Sticks</option>
                             </select>
                         </div>
 
@@ -136,88 +136,88 @@
 
                     <div class="flexbox">
                         <button id="freezing-temperatures" class="multistate" data-state="none"></button>
-                        <label for="freezing-temperatures">Freezing Temperatures</label>&nbsp;<a href="#" data-state="no" data-toggle-id="help-freezing-temperatures" class="toggle">?</a>
-                        <p id="help-freezing-temperatures" class="info hidden">Anything below 3&deg;C/37.4&deg;F.</p>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="section-title">Possibilities <a href="#" data-state="no" data-toggle-class="ghost-evidence" class="toggle">show evidence</a></p>
-                    <div class="flexbox ghost">
-                        <button id="spirit" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="spirit">Spirit</label>
-                        <p class="ghost-evidence info hidden">Spirit Box, Fingerprints, Ghost Writing</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="wraith" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="wraith">Wraith</label>
-                        <p class="ghost-evidence info hidden">Spirit Box, Fingerprints, Freezing Temperatures</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="phantom" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="phantom">Phantom</label>
-                        <p class="ghost-evidence info hidden">EMF Level 5, Ghost Orbs, Freezing Temperatures</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="poltergeist" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="poltergeist">Poltergeist</label>
-                        <p class="ghost-evidence info hidden">Spirit Box, Fingerprints, Ghost Orbs</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="banshee" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="banshee">Banshee</label>
-                        <p class="ghost-evidence info hidden">EMF Level 5, Fingerprints, Freezing Temperatures</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="jinn" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="jinn">Jinn</label>
-                        <p class="ghost-evidence info hidden">EMF Level 5, Spirit Box, Ghost Orbs</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="mare" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="mare">Mare</label>
-                        <p class="ghost-evidence info hidden">Spirit Box, Ghost Orbs, Freezing Temperatures</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="revenant" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="revenant">Revenant</label>
-                        <p class="ghost-evidence info hidden">EMF Level 5, Fingerprints, Ghost Writing</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="shade" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="shade">Shade</label>
-                        <p class="ghost-evidence info hidden">EMF Level 5, Ghost Orbs, Ghost Writing</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="demon" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="demon">Demon</label>
-                        <p class="ghost-evidence info hidden">Spirit Box, Ghost Writing, Freezing Temperatures</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="yurei" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="yurei">Yurei</label>
-                        <p class="ghost-evidence info hidden">Ghost Orbs, Ghost Writing, Freezing Temperatures</p>
-                    </div>
-
-                    <div class="flexbox ghost">
-                        <button id="oni" class="multistate" data-states="none no" data-state="none"></button>
-                        <label for="oni">Oni</label>
-                        <p class="ghost-evidence info hidden">EMF Level 5, Spirit Box, Ghost Writing</p>
+                        <label for="freezing-temperatures">Freezing Temperatures</label>
+                        <p id="help-freezing-temperatures" class="info">Anything below 3&deg;C/37.4&deg;F.</p>
                     </div>
                 </section>
             </div>
 
             <div class="column" id="right">
+                <section>
+                    <p class="section-title">Possibilities</p>
+                    <div class="flexbox ghost">
+                        <button id="spirit" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="spirit">Spirit</label>
+                        <p class="ghost-evidence info">Spirit Box, Fingerprints, Ghost Writing</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="wraith" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="wraith">Wraith</label>
+                        <p class="ghost-evidence info">Spirit Box, Fingerprints, Freezing Temperatures</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="phantom" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="phantom">Phantom</label>
+                        <p class="ghost-evidence info">EMF Level 5, Ghost Orbs, Freezing Temperatures</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="poltergeist" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="poltergeist">Poltergeist</label>
+                        <p class="ghost-evidence info">Spirit Box, Fingerprints, Ghost Orbs</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="banshee" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="banshee">Banshee</label>
+                        <p class="ghost-evidence info">EMF Level 5, Fingerprints, Freezing Temperatures</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="jinn" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="jinn">Jinn</label>
+                        <p class="ghost-evidence info">EMF Level 5, Spirit Box, Ghost Orbs</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="mare" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="mare">Mare</label>
+                        <p class="ghost-evidence info">Spirit Box, Ghost Orbs, Freezing Temperatures</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="revenant" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="revenant">Revenant</label>
+                        <p class="ghost-evidence info">EMF Level 5, Fingerprints, Ghost Writing</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="shade" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="shade">Shade</label>
+                        <p class="ghost-evidence info">EMF Level 5, Ghost Orbs, Ghost Writing</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="demon" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="demon">Demon</label>
+                        <p class="ghost-evidence info">Spirit Box, Ghost Writing, Freezing Temperatures</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="yurei" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="yurei">Yurei</label>
+                        <p class="ghost-evidence info">Ghost Orbs, Ghost Writing, Freezing Temperatures</p>
+                    </div>
+
+                    <div class="flexbox ghost">
+                        <button id="oni" class="multistate" data-states="none no" data-state="none"></button>
+                        <label for="oni">Oni</label>
+                        <p class="ghost-evidence info">EMF Level 5, Spirit Box, Ghost Writing</p>
+                    </div>
+                </section>
+            <!--
                 <section>
                     <p class="section-title">Reward <a href="#" data-state="no" data-toggle-id="reward-section" class="toggle">show section</a></p>
                     <div id="reward-section" class="hidden">
@@ -245,10 +245,11 @@
                         </div>
                     </div>
                 </section>
+            -->
 
                 <section>
-                    <p class="section-title">Photo Evidence <a href="#" data-state="no" data-toggle-id="photo-evidence" class="toggle">show section</a></p>
-                    <div id="photo-evidence" class="hidden">
+                    <p class="section-title">Photo Evidence</p>
+                    <div id="photo-evidence">
                         <div class="flexbox">
                             <input type="checkbox" id="photo-bone"/>
                             <label for="photo-bone">Bone</label>
@@ -293,6 +294,7 @@
                     </div>
                 </section>
 
+            <!--
                 <section>
                     <p class="section-title">Used Equipment <a href="#" data-state="no" data-toggle-id="used-equipment" class="toggle">show section</a></p>
                     <div id="used-equipment" class="hidden">
@@ -372,6 +374,7 @@
                         </div>
                     </div>
                 </section>
+            -->
             </div>
         </div>
     </div>
