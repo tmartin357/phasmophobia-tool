@@ -24,10 +24,10 @@ const ghosts = Object.freeze({
 
 function checkGhosts() {
     var buttons = [].slice.call(document.querySelectorAll("#evidence .multistate")); // Let buttons be the references to the checkboxes of the evidence panel
-    var elements = [].slice.call(document.getElementsByClassName("ghost")); // Let elements be the references to the ghost flexboxes of the possibilities panel
+    var elements = [].slice.call(document.getElementsByClassName("ghost")); // Let elements be the references to the flexboxes (ghosts) of the possibilities panel
 
     for(var element of elements) { // For each Ghost flexbox (plus hidden) in possibilities panel
-        var id = element.querySelector("button").id; // Let id be the checkbox id
+        var id = element.querySelector("button").id; // Let id be the checkbox id (Ghost type)
         var included = buttons.filter(b => ghosts[id].includes(b.id)); // Let included be the references to the evidence (panel) checkbox of the ghost's evidence
         var excluded = buttons.filter(b => !included.includes(b)); // Let excluded be the references to the evidence (panel) checkbox of the the ones not of the ghost's evidence 
         var isExcluded = false;
@@ -43,9 +43,9 @@ function checkGhosts() {
             element.style.display = "none";
         }
 
-        if(!isExcluded) {
-            for(var i = 0; i < included.length; i++) {
-                if(included[i].dataset.state === states.no.data) {
+        if(!isExcluded) { // If the ghost type is not excluded
+            for(var i = 0; i < included.length; i++) { // for each of the type's evidence
+                if(included[i].dataset.state === states.no.data) { // If the evidence is marked X
                     isExcluded = true;
                     break;
                 }
