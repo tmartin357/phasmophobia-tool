@@ -62,16 +62,6 @@ function checkGhosts() {
 }
 
 function crossFoundEvidence() {
-    // var ghostElements = [].slice.call(document.getElementsByClassName("ghost")); // Let ghostElements be the references to the flexboxes (ghosts) of the possibilities panel
-
-    // for(var ghost of ghostElements) { // For each Ghost flexbox (plus hidden) in possibilities panel    
-    //     var hints = [].slice.call(ghost.getElementsByClassName("hint-evidence"));
-    //     var included = buttons.filter(b => ghosts[id].includes(b.id)); // Let included be the references to the evidence (panel) checkbox of the ghost's evidence
-        
-    //     for(var i = 0; i < hints.length; i++) {
-    //         console.log(hints[i].id);
-    //     }
-    // }
     var buttons = [].slice.call(document.querySelectorAll("#evidence .multistate")); // evidence panel checkboxes
     var elements = [].slice.call(document.getElementsByClassName("ghost")); // ghost entries
 
